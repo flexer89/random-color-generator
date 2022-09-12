@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #000;
+    font-family: Roboto mono;
+    max-height: 100vh;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.Box-container {
+    margin: 5rem 10vw 0;
+    display: grid;
+    gap: 3rem 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 375px));
+    justify-content: center;
+}
+
+.divBox {
+    border: 1rem solid #fff;
+    border-radius: 10px;
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 3.5rem;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    font-size: 20px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    padding: 1rem 3rem 1rem;
+    outline: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    margin: 3rem auto;
+}
+
+button::after {
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+button:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+footer a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ---------------------Media Queries---------------- */
+
+@media screen and (max-width: 980px) {
+    body {
+        max-height: auto;
+    }
+
+    .Box-container {
+        grid-template-columns: 1fr;
+    }
+
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .divBox {
+        min-height: 20vh;
+    }
+}
