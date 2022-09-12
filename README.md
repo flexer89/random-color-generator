@@ -6,6 +6,10 @@ Simple website created with HTML/CSS/JS which enables generating random color in
 User can directly copy a hex code to clipboard by clicking it and use elsewhere.
 Website is fully responsive.
 
+# Live Site URL
+
+[https://leafy-scone-d6e76e.netlify.app]
+
 # Screens
 
 ![Desktop view](https://i.imgur.com/ZVNXcWd.png)
